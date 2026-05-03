@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Attendance System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <h2>Attendance System</h2>
+
+  <input type="date" id="date">
+  <button onclick="loadAttendance()">Load</button>
+
+  <div class="top-actions">
+    <button onclick="markAllPresent()">Mark All Present</button>
+    <button onclick="markAllAbsent()">Mark All Absent</button>
+  </div>
+
+  <div id="students"></div>
+
+  <div class="actions">
+    <button onclick="saveAttendance()">Save</button>
+    <button onclick="updateAttendance()">Update</button>
+  </div>
+
+  <h3>Monthly Report</h3>
+  <button onclick="generateReport()">Generate</button>
+  <div id="report"></div>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
